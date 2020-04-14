@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Design version="12" xmlns="http://cypress.com/xsd/cydesignfile_v3">
-    <ToolInfo version="1.0.0"/>
+    <ToolInfo version="2.1.0.1266"/>
     <Devices>
         <Device mpn="CYW20735B1">
             <BlockConfig>
+                <Block location="adc[0]">
+                    <Personality template="20x19_adc" version="1.0">
+                        <Param id="Channels" value="1"/>
+                    </Personality>
+                </Block>
                 <Block location="bluetooth[0]">
                     <Personality template="20x19_bluetooth" version="1.0"/>
                 </Block>
@@ -227,7 +232,19 @@
                         <Param id="InterruptTrigger" value="GPIO_EN_INT_RISING_EDGE"/>
                     </Personality>
                 </Block>
-                <Block location="ioss[0].pin[8]"/>
+                <Block location="ioss[0].pin[8]">
+                    <Alias value="CYBSP_A0"/>
+                    <Alias value="CYBSP_THERM_TEMP_SENSE"/>
+                    <Personality template="20x19_pin" version="1.0">
+                        <Param id="Type" value="PERIPHERAL"/>
+                        <Param id="Index" value="0"/>
+                        <Param id="DefaultState" value="GPIO_PIN_OUTPUT_LOW"/>
+                        <Param id="Control" value="GPIO_INPUT_ENABLE"/>
+                        <Param id="PullMode" value="GPIO_PULL_UP_DOWN_NONE"/>
+                        <Param id="InterruptEnable" value="false"/>
+                        <Param id="InterruptTrigger" value="GPIO_EN_INT_RISING_EDGE"/>
+                    </Personality>
+                </Block>
                 <Block location="spi[0]">
                     <Personality template="20x19_spi" version="1.0"/>
                 </Block>
@@ -236,6 +253,10 @@
                 </Block>
             </BlockConfig>
             <Netlist>
+                <Net>
+                    <Port name="adc[0].channel[0]"/>
+                    <Port name="ioss[0].pin[8].aux[0]"/>
+                </Net>
                 <Net>
                     <Port name="i2c[0].scl[0]"/>
                     <Port name="ioss[0].pin[34].aux[0]"/>
@@ -279,8 +300,5 @@
             </Netlist>
         </Device>
     </Devices>
-    <Libraries>
-        <Library name="bt_sdk" version="1.1"/>
-    </Libraries>
     <ConfiguratorData/>
 </Design>

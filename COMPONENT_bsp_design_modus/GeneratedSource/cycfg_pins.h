@@ -4,10 +4,13 @@
 * Description:
 * Pin configuration
 * This file was automatically generated and should not be modified.
-* Device Configurator: 2.0.0.1483
+* Tools Package 2.1.0.1266
+* 20735B1
+* personalities 1.0.0.31
+* udd 1.2.0.128
 *
 ********************************************************************************
-* Copyright 2017-2019 Cypress Semiconductor Corporation
+* Copyright 2020 Cypress Semiconductor Corporation
 * SPDX-License-Identifier: Apache-2.0
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,6 +37,7 @@
 extern "C" {
 #endif
 
+#define adc_0_ENABLED 1U
 #define bluetooth_0_ENABLED 1U
 #define i2c_0_ENABLED 1U
 #define ioss_0_ENABLED 1U
@@ -92,6 +96,10 @@ extern "C" {
 #define SPI1_CLK_ENABLED CYBSP_D13_ENABLED
 #define CYBSP_D13 WICED_P07
 #define SPI1_CLK CYBSP_D13
+#define CYBSP_A0_ENABLED 1U
+#define CYBSP_THERM_TEMP_SENSE_ENABLED CYBSP_A0_ENABLED
+#define CYBSP_A0 WICED_P08
+#define CYBSP_THERM_TEMP_SENSE CYBSP_A0
 #define spi_0_ENABLED 1U
 #define uart_1_ENABLED 1U
 

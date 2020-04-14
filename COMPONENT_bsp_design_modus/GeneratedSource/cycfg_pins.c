@@ -4,10 +4,13 @@
 * Description:
 * Pin configuration
 * This file was automatically generated and should not be modified.
-* Device Configurator: 2.0.0.1483
+* Tools Package 2.1.0.1266
+* 20735B1
+* personalities 1.0.0.31
+* udd 1.2.0.128
 *
 ********************************************************************************
-* Copyright 2017-2019 Cypress Semiconductor Corporation
+* Copyright 2020 Cypress Semiconductor Corporation
 * SPDX-License-Identifier: Apache-2.0
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -34,25 +37,25 @@
 }
 #define CYBSP_A4_config \
 {\
-    .gpio = (wiced_bt_gpio_numbers_t*)&platform_gpio_pins[PLATFORM_GPIO_7].gpio_pin, \
+    .gpio = (wiced_bt_gpio_numbers_t*)&platform_gpio_pins[PLATFORM_GPIO_8].gpio_pin, \
     .config = GPIO_INPUT_ENABLE | GPIO_PULL_UP_DOWN_NONE, \
     .default_state = GPIO_PIN_OUTPUT_LOW, \
  }
 #define CYBSP_A5_config \
 {\
-    .gpio = (wiced_bt_gpio_numbers_t*)&platform_gpio_pins[PLATFORM_GPIO_8].gpio_pin, \
+    .gpio = (wiced_bt_gpio_numbers_t*)&platform_gpio_pins[PLATFORM_GPIO_9].gpio_pin, \
     .config = GPIO_INPUT_ENABLE | GPIO_PULL_UP_DOWN_NONE, \
     .default_state = GPIO_PIN_OUTPUT_LOW, \
  }
 #define LED2_config \
 {\
-    .gpio = (wiced_bt_gpio_numbers_t*)&platform_gpio_pins[PLATFORM_GPIO_10].gpio_pin, \
+    .gpio = (wiced_bt_gpio_numbers_t*)&platform_gpio_pins[PLATFORM_GPIO_11].gpio_pin, \
     .config = GPIO_OUTPUT_ENABLE | GPIO_PULL_UP, \
     .default_state = GPIO_PIN_OUTPUT_HIGH, \
  }
 #define LED1_config \
 {\
-    .gpio = (wiced_bt_gpio_numbers_t*)&platform_gpio_pins[PLATFORM_GPIO_11].gpio_pin, \
+    .gpio = (wiced_bt_gpio_numbers_t*)&platform_gpio_pins[PLATFORM_GPIO_12].gpio_pin, \
     .config = GPIO_OUTPUT_ENABLE | GPIO_PULL_UP, \
     .default_state = GPIO_PIN_OUTPUT_HIGH, \
  }
@@ -76,18 +79,19 @@ const wiced_platform_gpio_t platform_gpio_pins[] =
 	[PLATFORM_GPIO_2] = {WICED_P05, WICED_GPIO},
 	[PLATFORM_GPIO_3] = {WICED_P06, spi_0_mosi_0_TRIGGER_IN},
 	[PLATFORM_GPIO_4] = {WICED_P07, spi_0_clk_0_TRIGGER_IN},
-	[PLATFORM_GPIO_5] = {WICED_P10, uart_1_cts_0_TRIGGER_IN},
-	[PLATFORM_GPIO_6] = {WICED_P11, uart_1_rts_0_TRIGGER_IN},
-	[PLATFORM_GPIO_7] = {WICED_P12, WICED_GPIO},
-	[PLATFORM_GPIO_8] = {WICED_P13, WICED_GPIO},
-	[PLATFORM_GPIO_9] = {WICED_P16, spi_0_miso_0_TRIGGER_IN},
-	[PLATFORM_GPIO_10] = {WICED_P26, WICED_GPIO},
-	[PLATFORM_GPIO_11] = {WICED_P27, WICED_GPIO},
-	[PLATFORM_GPIO_12] = {WICED_P28, i2c_0_sda_0_TRIGGER_IN},
-	[PLATFORM_GPIO_13] = {WICED_P29, uart_1_rxd_0_TRIGGER_IN},
-	[PLATFORM_GPIO_14] = {WICED_P32, uart_1_txd_0_TRIGGER_IN},
-	[PLATFORM_GPIO_15] = {WICED_P34, i2c_0_scl_0_TRIGGER_IN},
-	[PLATFORM_GPIO_16] = {WICED_P38, spi_0_cs_0_TRIGGER_IN},
+	[PLATFORM_GPIO_5] = {WICED_P08, adc_0_channel_0_TRIGGER_IN},
+	[PLATFORM_GPIO_6] = {WICED_P10, uart_1_cts_0_TRIGGER_IN},
+	[PLATFORM_GPIO_7] = {WICED_P11, uart_1_rts_0_TRIGGER_IN},
+	[PLATFORM_GPIO_8] = {WICED_P12, WICED_GPIO},
+	[PLATFORM_GPIO_9] = {WICED_P13, WICED_GPIO},
+	[PLATFORM_GPIO_10] = {WICED_P16, spi_0_miso_0_TRIGGER_IN},
+	[PLATFORM_GPIO_11] = {WICED_P26, WICED_GPIO},
+	[PLATFORM_GPIO_12] = {WICED_P27, WICED_GPIO},
+	[PLATFORM_GPIO_13] = {WICED_P28, i2c_0_sda_0_TRIGGER_IN},
+	[PLATFORM_GPIO_14] = {WICED_P29, uart_1_rxd_0_TRIGGER_IN},
+	[PLATFORM_GPIO_15] = {WICED_P32, uart_1_txd_0_TRIGGER_IN},
+	[PLATFORM_GPIO_16] = {WICED_P34, i2c_0_scl_0_TRIGGER_IN},
+	[PLATFORM_GPIO_17] = {WICED_P38, spi_0_cs_0_TRIGGER_IN},
 };
 const size_t platform_gpio_pin_count = (sizeof(platform_gpio_pins) / sizeof(wiced_platform_gpio_t));
 const wiced_platform_led_config_t platform_led[] =
