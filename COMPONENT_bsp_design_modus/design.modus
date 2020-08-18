@@ -21,6 +21,7 @@
                 <Block location="ioss[0].pin[0]">
                     <Alias value="CYBSP_D2"/>
                     <Alias value="SW3"/>
+                    <Alias value="USER_BUTTON1"/>
                     <Personality template="20x19_pin" version="1.0">
                         <Param id="Type" value="BUTTON"/>
                         <Param id="Index" value="1"/>

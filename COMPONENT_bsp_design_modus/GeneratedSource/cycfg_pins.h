@@ -7,7 +7,7 @@
 * Tools Package 2.1.0.1266
 * 20735B1
 * personalities 1.0.0.31
-* udd 1.2.0.128
+* udd 1.2.0.370
 *
 ********************************************************************************
 * Copyright 2020 Cypress Semiconductor Corporation
@@ -46,8 +46,10 @@ extern "C" {
 #define WICED_GET_PIN_FOR_IO(idx) (*(platform_gpio[(idx)].gpio))
 #define CYBSP_D2_ENABLED 1U
 #define SW3_ENABLED CYBSP_D2_ENABLED
+#define USER_BUTTON1_ENABLED CYBSP_D2_ENABLED
 #define CYBSP_D2 WICED_P00
 #define SW3 CYBSP_D2
+#define USER_BUTTON1 CYBSP_D2
 #define CYBSP_A2_ENABLED 1U
 #define PUART_CTS_ENABLED CYBSP_A2_ENABLED
 #define CYBSP_A2 WICED_P10
