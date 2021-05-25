@@ -208,7 +208,7 @@ wiced_platform_gpio_config_t;
 /*! pin for LED 2 */
 #define WICED_GPIO_PIN_LED_2     WICED_P26
 
-#define WICED_PUART_TXD          WICED_P33
+#define WICED_PUART_TXD          WICED_P32
 #define WICED_PUART_RXD          WICED_P29
 
 /** Pin state for the LED on. */
