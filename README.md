@@ -2,9 +2,9 @@
 
 ### Overview
 
-The Cypress CYW920735Q60EVB-01 Evaluation Kit enables you to evaluate and develop single-chip Bluetooth applications using the CYW20735, an ultra-low-power dual-mode Bluetooth 5.0 wireless MCU device. The CYW20735 is a stand-alone baseband processor with an integrated 2.4 GHz transceiver supporting Bluetooth Low Energy (LE) and Basic Rate (BR). Extended Data Rate (EDR) is not supported. The CYW20735 employs high integration to reduce external components, thereby minimizing the devices's footprint and cost. The device includes several on-chip peripherals including a hardware key scanner, PWMs, and an ADC. The device also includes an analog microphone interface that provides a low-cost solution for voice-enabled remotes as well as Internet of Things (IoT) gadgets and toys. This kit helps evaluate device functionality and develop applications quickly for faster time-to-market.
+The Infineon CYW920735Q60EVB-01 Evaluation Kit enables you to evaluate and develop single-chip Bluetooth&#174; applications using the CYW20735, an ultra-low-power dual-mode Bluetooth&#174; 5.0 wireless MCU device. The CYW20735 is a stand-alone baseband processor with an integrated 2.4 GHz transceiver supporting Bluetooth&#174; Low Energy (LE) and Basic Rate (BR). Extended Data Rate (EDR) is not supported. The CYW20735 employs high integration to reduce external components, thereby minimizing the devices's footprint and cost. The device includes several on-chip peripherals including a hardware key scanner, PWMs, and an ADC. The device also includes an analog microphone interface that provides a low-cost solution for voice-enabled remotes as well as Internet of Things (IoT) gadgets and toys. This kit helps evaluate device functionality and develop applications quickly for faster time-to-market.
 
-* 60-QFN CYW20735 dual-mode (LE/BR) Bluetooth 5.0-compliant wireless MCU
+* 60-QFN CYW20735 dual-mode (LE/BR) Bluetooth&#174; 5.0-compliant wireless MCU
 * Arduino compatible headers for hardware expansion
 * On-board sensors - a 9-axis motion sensor (3D digital linear acceleration sensor, 3D digital angular rate sensor, and 3D digital magnetic sensor) and a thermistor
 * User switches and LEDs

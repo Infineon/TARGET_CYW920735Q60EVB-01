@@ -61,6 +61,9 @@ CY_INTERNAL_BASELIB_PATH?=$(patsubst %/,%,$(CY_BASELIB_PATH))
 override CY_DEVICESUPPORT_SEARCH_PATH:=$(call CY_MACRO_SEARCH,devicesupport.xml,$(CY_INTERNAL_BASELIB_PATH))
 endif
 
+# declare which stack version to use in COMPONENT folders
+COMPONENTS+=btstack_v1
+
 #
 # Define the features for this target
 #
