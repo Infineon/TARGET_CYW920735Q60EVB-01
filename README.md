@@ -20,4 +20,4 @@ The Infineon CYW920735Q60EVB-01 Evaluation Kit enables you to evaluate and devel
 
 Max UART baud rate is 3M.
 
-For more information, see the [CYW20735 Product Guide](https://community.cypress.com/docs/DOC-15077)
+For more information, see the [CYW20735 Product Guide](https://community.infineon.com/t5/Public-Archive/CYW20735-Product-Guide/td-p/249939)
